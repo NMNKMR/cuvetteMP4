@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#root {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B4664;
+}
+
+.screen {
+    width: 33.5rem;
+    height: 8.9205rem;
+    background-color: #181F32;
+    border-radius: 0.75rem;
+    margin-bottom: 1.64rem;
+    color: #FFF;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3.4375rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-wrap: break-word;
+    padding-right: 2.19rem;
+}
+
+.num-pad {
+    width: 33.5rem;
+    height: 30.4375rem;
+    background-color: #252D44;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1.37rem;
+    color: #3B4664;
+    font-family: 'Inter', sans-serif;;
+    font-size: 1.875rem;
+    font-weight: 800;
+    user-select: none;
+}
+
+.gray-keys, #delete {
+    width: 6.25rem;
+    height: 3.75rem;
+    border-radius: 0.75rem;
+    background-color: #EAE3DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+#delete, #reset {
+    background-color: #647299;
+    color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 9px #808288;
+}
+
+#reset, #calculate {
+    width: 13.90225rem;
+    height: 3.75rem;
+    border-radius: 0.72025rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#calculate {
+    background-color: #D13F30;
+    color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 9px #bb817b;
+}
+
+.gray-keys:active, #delete:active, #reset:active, #calculate:active {
+    opacity: 0.5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.disabled {
+    pointer-events: none;
+}
